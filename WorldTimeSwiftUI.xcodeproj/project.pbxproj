@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		B742BBFA28AB37A600E50F6D /* WorldTimeSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742BBF928AB37A600E50F6D /* WorldTimeSwiftUIApp.swift */; };
-		B742BBFC28AB37A600E50F6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742BBFB28AB37A600E50F6D /* ContentView.swift */; };
 		B742BBFE28AB37A700E50F6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B742BBFD28AB37A700E50F6D /* Assets.xcassets */; };
 		B742BC0128AB37A700E50F6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B742BC0028AB37A700E50F6D /* Preview Assets.xcassets */; };
+		B742BC0828AB384200E50F6D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742BC0728AB384200E50F6D /* HomeView.swift */; };
+		B742BC0A28AB46E700E50F6D /* SelectLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742BC0928AB46E700E50F6D /* SelectLocationView.swift */; };
+		B742BC0E28AB4E2300E50F6D /* WorldLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742BC0D28AB4E2300E50F6D /* WorldLocation.swift */; };
+		B76140A728AD3A5B00BD4680 /* WorldTimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76140A628AD3A5B00BD4680 /* WorldTimeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B742BBF628AB37A600E50F6D /* WorldTimeSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTimeSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B742BBF928AB37A600E50F6D /* WorldTimeSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTimeSwiftUIApp.swift; sourceTree = "<group>"; };
-		B742BBFB28AB37A600E50F6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B742BBFD28AB37A700E50F6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B742BC0028AB37A700E50F6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B742BC0728AB384200E50F6D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B742BC0928AB46E700E50F6D /* SelectLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationView.swift; sourceTree = "<group>"; };
+		B742BC0D28AB4E2300E50F6D /* WorldLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldLocation.swift; sourceTree = "<group>"; };
+		B76140A628AD3A5B00BD4680 /* WorldTimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTimeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,10 @@
 		B742BBF828AB37A600E50F6D /* WorldTimeSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				B76140A528AD3A4C00BD4680 /* Services */,
+				B742BC0C28AB4DDD00E50F6D /* Views */,
+				B742BC0B28AB4DD000E50F6D /* Models */,
 				B742BBF928AB37A600E50F6D /* WorldTimeSwiftUIApp.swift */,
-				B742BBFB28AB37A600E50F6D /* ContentView.swift */,
 				B742BBFD28AB37A700E50F6D /* Assets.xcassets */,
 				B742BBFF28AB37A700E50F6D /* Preview Content */,
 			);
@@ -65,6 +73,31 @@
 				B742BC0028AB37A700E50F6D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B742BC0B28AB4DD000E50F6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B742BC0D28AB4E2300E50F6D /* WorldLocation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B742BC0C28AB4DDD00E50F6D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B742BC0728AB384200E50F6D /* HomeView.swift */,
+				B742BC0928AB46E700E50F6D /* SelectLocationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B76140A528AD3A4C00BD4680 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B76140A628AD3A5B00BD4680 /* WorldTimeService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B742BBFC28AB37A600E50F6D /* ContentView.swift in Sources */,
+				B742BC0828AB384200E50F6D /* HomeView.swift in Sources */,
+				B76140A728AD3A5B00BD4680 /* WorldTimeService.swift in Sources */,
+				B742BC0E28AB4E2300E50F6D /* WorldLocation.swift in Sources */,
 				B742BBFA28AB37A600E50F6D /* WorldTimeSwiftUIApp.swift in Sources */,
+				B742BC0A28AB46E700E50F6D /* SelectLocationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

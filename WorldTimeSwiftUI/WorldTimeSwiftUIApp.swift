@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct WorldTimeSwiftUIApp: App {
+    @StateObject private var worldTimeService = WorldTimeService()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView().environmentObject(worldTimeService)
         }
     }
 }
